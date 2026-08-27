@@ -86,20 +86,20 @@ graph TB
 
 ```mermaid
 flowchart TD
-    A([Input: SQL DDL / Natural Language / Sample Schema]) --> B[Client Ingestion & State Manager]
+    A(["Input: SQL DDL / Natural Language / Sample Schema"]) --> B["Client Ingestion & State Manager"]
     
-    B --> C{Custom Gemini Key or Default Env?}
-    C -->|Provided / Online| D[Google Gemini API Pipeline]
-    C -->|Fallback / Offline| E[Local Deterministic Parser Engine]
+    B --> C{"Custom Gemini Key or Default Env?"}
+    C -->|"Provided / Online"| D["Google Gemini API Pipeline"]
+    C -->|"Fallback / Offline"| E["Local Deterministic Parser Engine"]
 
-    D --> F[Structured Schema AST Graph Model]
+    D --> F["Structured Schema AST Graph Model"]
     E --> F
 
-    F --> G[Relational Linker & Constraint Resolver]
+    F --> G["Relational Linker & Constraint Resolver"]
     
-    G --> H[Interactive Canvas Renderer]
+    G --> H["Interactive Canvas Renderer"]
     
-    subgraph Multi_Notation_Engine [Multi-Notation Adapter]
+    subgraph Multi_Notation_Engine ["Multi-Notation Adapter"]
         H --> N1["Crow's Foot (IE Standard)"]
         H --> N2["Peter Chen Notation"]
         H --> N3["UML Class / IDEF1X"]
@@ -107,15 +107,15 @@ flowchart TD
         H --> N5["Star / Kimball Dimensional Schema"]
     end
 
-    Multi_Notation_Engine --> I[User Workspace Actions]
+    Multi_Notation_Engine --> I["User Workspace Actions"]
 
-    subgraph Action_Pipelines [Advanced Tooling Suites]
-        I --> P1[AI Index & Normalization Optimizer]
-        I --> P2[Visual Query Execution Plan Explainer]
-        I --> P3[Natural Language Schema Copilot]
-        I --> P4[Synthetic Mock Data Generator (SQL/JSON)]
-        I --> P5[Multi-Dialect Converter (PG, MySQL, SQLite, Oracle, Snowflake)]
-        I --> P6[Universal Exporter (SVG, PNG, PDF, DBML, PlantUML, Prisma)]
+    subgraph Action_Pipelines ["Advanced Tooling Suites"]
+        I --> P1["AI Index & Normalization Optimizer"]
+        I --> P2["Visual Query Execution Plan Explainer"]
+        I --> P3["Natural Language Schema Copilot"]
+        I --> P4["Synthetic Mock Data Generator (SQL / JSON)"]
+        I --> P5["Multi-Dialect Converter (PG, MySQL, SQLite, Oracle, Snowflake)"]
+        I --> P6["Universal Exporter (SVG, PNG, PDF, DBML, PlantUML, Prisma)"]
     end
 ```
 
