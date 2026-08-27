@@ -1,0 +1,6 @@
+{
+  "name": "RelateX - AI Schema Visualizer & Index Optimizer",
+  "description": "Interactive multi-notation database ERD visualizer (Crow's Foot, Peter Chen, UML Class/IDEF1X, Bachman DSD, Star/Kimball Schema), query plan explainer, and AI index performance optimizer powered by Google AI Studio Gemini API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
