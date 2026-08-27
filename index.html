@@ -1,16 +1,33 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-    <meta name="description" content="An application built with Google AI Studio." />
-    <meta property="og:title" content="My Google AI Studio App" />
-    <meta property="og:description" content="An application built with Google AI Studio." />
+    <title>RelateX — AI-Powered Database ERD Visualizer & Schema Architect</title>
+    <meta name="description" content="Interactive multi-notation database ERD visualizer (Crow's Foot, Peter Chen, UML Class/IDEF1X, Bachman DSD, Star/Kimball Schema), query plan explainer, and AI index performance optimizer powered by Google Gemini API." />
+    <meta name="keywords" content="ERD, Database Schema, SQL Visualizer, Crow's Foot, Peter Chen, UML, Bachman, Star Schema, AI Optimizer, Query Plan, Gemini" />
+    <meta name="theme-color" content="#0f172a" />
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://github.com/sepas1609/RelateX" />
+    <meta property="og:title" content="RelateX — AI-Powered Database ERD Visualizer & Schema Architect" />
+    <meta property="og:description" content="Visualize schemas in 5 notations, optimize indexes with Gemini AI, explain query plans visually, and generate mock data." />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="RelateX — AI-Powered Database ERD Visualizer" />
+    <meta property="twitter:description" content="Visualize schemas in 5 notations, optimize indexes with Gemini AI, explain query plans visually, and generate mock data." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2338bdf8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect width='18' height='18' x='3' y='3' rx='2'/><path d='M3 9h18'/><path d='M9 21V9'/></svg>" />
   </head>
-  <body>
+  <body class="bg-slate-950 text-slate-100 font-sans antialiased overflow-hidden select-none">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
